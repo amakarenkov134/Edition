@@ -1,4 +1,4 @@
-## Edition
+## class Edition
 
 
 ``` c++
@@ -23,7 +23,7 @@ public:
 
 ```
 
-## Allowance
+## class Allowance
 
 
 ``` c++ 
@@ -42,7 +42,7 @@ public:
 ```
 
 
-## Article
+## class Article
 
 
 ``` c++
@@ -63,7 +63,7 @@ public:
 
 ```
 
-## Book 
+## class Book 
 
 ``` c++ 
 class Book :
