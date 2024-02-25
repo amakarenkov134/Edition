@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include<fstream>
 #include<ctime>
 #include<Windows.h>
@@ -24,10 +24,10 @@ int main()
     for (int i = 0; i < n; i++)
     {
         fin.getline(what, 30);
-        if (strcmp(what, "Êíèãà") == 0) e[i] = new Book;
-        else if (strcmp(what, "Ñòàòüÿ") == 0) e[i] = new Article;
-        else if (strcmp(what, "Ïîñîáèå") == 0) e[i] = new Allowance;
-        else { cout << "Íåêîððåêòíûå äàííûå â ôàéëå"; return 1; }
+        if (strcmp(what, "ÐšÐ½Ð¸Ð³Ð°") == 0) e[i] = new Book;
+        else if (strcmp(what, "Ð¡Ñ‚Ð°Ñ‚ÑŒÑ") == 0) e[i] = new Article;
+        else if (strcmp(what, "ÐŸÐ¾ÑÐ¾Ð±Ð¸Ðµ") == 0) e[i] = new Allowance;
+        else { cout << "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð² Ñ„Ð°Ð¹Ð»Ðµ"; return 1; }
         e[i]->input_from_file(fin);
         fin.get();
     }
@@ -43,13 +43,13 @@ int main()
         cout << "\nMENU" << endl;
         cout << "____________________________________________________";
         cout << endl;
-        cout << "1.Âûâåñòè ñïèñîê èçäàíèé \n2.Ïîèñê âñåõ èçäàíèé çàïðàøèâàåìîãî àâòîðà\n3.Âûâîä ïîëíîé èíôîðìàöèè î çàïðàøèâàåìîì èçäàíèè\n4.Ñîðòèðîâêà ïî íàçâàíèþ èçäàíèÿ\n0.Âûõîä" << endl;
+        cout << "1.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº Ð¸Ð·Ð´Ð°Ð½Ð¸Ð¹ \n2.ÐŸÐ¾Ð¸ÑÐº Ð²ÑÐµÑ… Ð¸Ð·Ð´Ð°Ð½Ð¸Ð¹ Ð·Ð°Ð¿Ñ€Ð°ÑˆÐ¸Ð²Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ð°Ð²Ñ‚Ð¾Ñ€Ð°\n3.Ð’Ñ‹Ð²Ð¾Ð´ Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¾ Ð·Ð°Ð¿Ñ€Ð°ÑˆÐ¸Ð²Ð°ÐµÐ¼Ð¾Ð¼ Ð¸Ð·Ð´Ð°Ð½Ð¸Ð¸\n4.Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¿Ð¾ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÑŽ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ\n0.Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
         cin >> p;
         switch (p)
         {
         case 1:
         {
-            cout << "Ñïèñîê èçäàíèé:\n";
+            cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¸Ð·Ð´Ð°Ð½Ð¸Ð¹:\n";
             for (int i = 0; i < n; i++)
             {
                 e[i]->output();
@@ -59,7 +59,7 @@ int main()
         case 2:
         {
             char full_name[30];
-            cout << "Ââåäèòå ôàìèëèþ ÷åëîâåêà: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐ°: ";
             cin.ignore();
             cin.getline(full_name, 90);
             bool f = false;
@@ -70,13 +70,13 @@ int main()
                     e[i]->output(); f = true;
                 }
             }
-            if (!f) cout << "Èçäàíèÿ ýòîãî ÷åëîâåêà íå íàéäåíû\n";
+            if (!f) cout << "Ð˜Ð·Ð´Ð°Ð½Ð¸Ñ ÑÑ‚Ð¾Ð³Ð¾ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐ° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹\n";
             break;
         }
         case 3:
         {
             char full_name[30];
-            cout << "Ââåäèòå íàçâàíèå èçäàíèÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ: ";
             cin.ignore();
             cin.getline(full_name, 90);
             bool f = false;
@@ -87,7 +87,7 @@ int main()
                     e[i]->output(); f = true;
                 }
             }
-            if (!f) cout << "Èçäàíèÿ íå íàéäåíû\n";
+            if (!f) cout << "Ð˜Ð·Ð´Ð°Ð½Ð¸Ñ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹\n";
             break;
         }
 
@@ -100,7 +100,7 @@ int main()
                     if (e[j + 1]->sorting(e[j])) { Edition* temp = e[j + 1]; e[j + 1] = e[j]; e[j] = temp; }
                 }
             }
-            cout << "\nÎòñîðòèðîâàííûé ñïèñîê èçäàíèé:\n\n";
+            cout << "\nÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ð¸Ð·Ð´Ð°Ð½Ð¸Ð¹:\n\n";
             for (int i = 0; i < n; i++)
             {
                 e[i]->output();
@@ -114,7 +114,7 @@ int main()
             break;
         }
         default:
-            cout << "Âûáåðèòå äðóãîé âàðèàíò!" << endl;
+            cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´Ñ€ÑƒÐ³Ð¾Ð¹ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚!" << endl;
             break;
         }
 
