@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Edition.h"
 #include <iostream>
 

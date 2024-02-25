@@ -1,15 +1,15 @@
-#include "Book.h"
+ï»¿#include "Book.h"
 
 void Book::input()
 {
     cin.ignore();
-    cout << "Ââåäèòå íàçâàíèå êíèãè: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¸Ð³Ð¸: ";
     cin.getline(name, 90);
-    cout << "Ââåäèòå ôàìèëèþ àâòîðà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ð°Ð²Ñ‚Ð¾Ñ€Ð°: ";
     cin.getline(autor, 90);
-    cout << "Ââåäèòå ãîä èçäàíèÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð¾Ð´ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ: ";
     cin >> year;
-    cout << "Ââåäèòå êîëè÷åñòâî ñòðàíèö: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: ";
     cin >> pages;
 
 }
@@ -24,7 +24,7 @@ void Book::input_from_file(ifstream& fin)
 
 void Book::output()
 {
-    cout << name << endl << "Àâòîð:" << autor << endl << "Ãîä èçäàíèÿ êíèãè:" << year << endl << "Êîëè÷åñòâî ñòðàíèö:" << pages << endl;
+    cout << name << endl << "ÐÐ²Ñ‚Ð¾Ñ€:" << autor << endl << "Ð“Ð¾Ð´ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ ÐºÐ½Ð¸Ð³Ð¸:" << year << endl << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†:" << pages << endl;
     cout << endl;
 }
 

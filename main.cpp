@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include<fstream>
 #include<ctime>
-#include<Windows.h>
+#include<Windows.h>W
 #include "Edition.h"
 #include "Book.h"
 #include "Allowance.h"

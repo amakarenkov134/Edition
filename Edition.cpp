@@ -1,14 +1,14 @@
-#include "Edition.h"
+ï»¿#include "Edition.h"
 #include <iostream>
 
 Edition::Edition()
 {
-	std::cout << "Êîíñòóêòîð êëàññà Edition" << std::endl;
+	std::cout << "ÐšÐ¾Ð½ÑÑ‚ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑÐ° Edition" << std::endl;
 }
 
 Edition::~Edition()
 {
-	std::cout << "Äåñòðóêòîð êëàññ Edition" << std::endl;
+	std::cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ»Ð°ÑÑ Edition" << std::endl;
 }
 
 bool Edition::compare_name(char* snp)

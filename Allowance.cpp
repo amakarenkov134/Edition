@@ -1,13 +1,13 @@
-#include "Allowance.h"
+ï»¿#include "Allowance.h"
 
 void Allowance::input()
 {
     cin.ignore();
-    cout << "Ââåäèòå íàçâàíèå ýëåêòðîííîãî ìåòîäè÷åñêîãî ïîñîáèÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð¼ÐµÑ‚Ð¾Ð´Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ Ð¿Ð¾ÑÐ¾Ð±Ð¸Ñ: ";
     cin.getline(name, 90);
-    cout << "Ââåäèòå ôàìèëèþ àâòîðà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ð°Ð²Ñ‚Ð¾Ñ€Ð°: ";
     cin.getline(autor, 90);
-    cout << "Ââåäèòå ññûëêó äëÿ ñêà÷èâàíèÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑÑ‹Ð»ÐºÑƒ Ð´Ð»Ñ ÑÐºÐ°Ñ‡Ð¸Ð²Ð°Ð½Ð¸Ñ: ";
     cin.getline(link, 90);
 }
 
@@ -21,7 +21,7 @@ void Allowance::input_from_file(ifstream& fin)
 
 void Allowance::output()
 {
-    cout << name << endl << "Àâòîð:" << autor << endl << "Ññûëêà äëÿ ñêà÷èâàíèÿ:" << link << endl << "Ãîä èçäàíèÿ:" << year << endl;
+    cout << name << endl << "ÐÐ²Ñ‚Ð¾Ñ€:" << autor << endl << "Ð¡ÑÑ‹Ð»ÐºÐ° Ð´Ð»Ñ ÑÐºÐ°Ñ‡Ð¸Ð²Ð°Ð½Ð¸Ñ:" << link << endl << "Ð“Ð¾Ð´ Ð¸Ð·Ð´Ð°Ð½Ð¸Ñ:" << year << endl;
     cout << endl;
 }
 
